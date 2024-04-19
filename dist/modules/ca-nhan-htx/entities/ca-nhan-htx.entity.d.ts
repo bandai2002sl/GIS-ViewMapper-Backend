@@ -1,0 +1,34 @@
+import { BaseEntityCustom } from "src/common/shared";
+import { AdministrativeUnit } from "src/modules/administrative-unit/entities/administrative-unit.entity";
+import { CoSoChanNuoi } from "src/modules/co-so-chan-nuoi/entities/co-so-chan-nuoi.entity";
+import { CoSoCheBien } from "src/modules/co-so-che-bien/entities/co-so-che-bien.entity";
+import { CoSoKinhDoanh } from "src/modules/co-so-kinh-doanh/entities/co-so-kinh-doanh.entity";
+import { LienKet } from "src/modules/lien-ket/entities/lien-ket.entity";
+import { MoHinhCongNgheCao } from "src/modules/mo-hinh-cong-nghe-cao/entities/mo-hinh-cong-nghe-cao.entity";
+import { SanXuatVatNuoi } from "src/modules/san-xuat-vat-nuoi/entities/san-xuat-vat-nuoi.entity";
+import { TauCa } from "src/modules/tau-ca/entities/tau-ca.entity";
+import { SanXuatThuySan } from "src/modules/san-xuat-thuy-san/entities/san-xuat-thuy-san.entity";
+export declare class CaNhanHtx extends BaseEntityCustom {
+    id: number;
+    name: string;
+    sdt: string;
+    address: string;
+    moTa: string;
+    linhVucHoatDong: string;
+    hinhAnh: string;
+    ngayThanhLap: Date;
+    loaiHinh: string;
+    soNguoi: number;
+    trangThai: string;
+    toaDo: string;
+    icon: string;
+    administrativeUnit: AdministrativeUnit;
+    moHinhCongNgheCaos: MoHinhCongNgheCao[];
+    lienKets: LienKet[];
+    sanXuatVatNuois: SanXuatVatNuoi[];
+    coSoKinhDoanhs: CoSoKinhDoanh[];
+    coSoCheBiens: CoSoCheBien[];
+    coSoChanNuois: CoSoChanNuoi[];
+    tauCas: TauCa[];
+    sanXuatThuySans: SanXuatThuySan[];
+}
